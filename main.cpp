@@ -203,7 +203,7 @@ int main( int argc, char **argv )
 	fprintf( stderr, "*= 2   int32_t: 0x%lX\n", (uint64_t) (iint *= 2 ) );
 	fprintf( stderr, "-= 16  int32_t: 0x%lX\n", (uint64_t) (iint -= 16 ) );
 	COInteger	uint( (uint32_t) 2147483648 );
-	fprintf( stderr, "+= 16 uint32_t: 0X%lX\n", (uint64_t) (uint += (uint16_t) 16) );
+	fprintf( stderr, "+= 16 uint32_t: 0X%lX\n", (uint64_t) (uint += (uint32_t)16) );
 	fprintf( stderr, "/= 4  uint32_t: 0x%lX\n", (uint64_t) (uint /= 4 ) );
 	fprintf( stderr, "*= 2  uint32_t: 0x%lX\n", (uint64_t) (uint *= 2 ) );
 	fprintf( stderr, "-= 16 uint32_t: 0x%lX\n", (uint64_t) (uint -= 16 ) );
