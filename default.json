@@ -1,0 +1,124 @@
+{
+        "threeAxis": 
+        { 
+                "type": "bool",
+                "defaultValue": true
+        },
+        "configuration":
+        {
+                "type": "unit",
+                "C1":
+                {
+                        "type": "unit",
+                        "name":
+                        {
+                                "type": "string",
+                                "size": 8,
+                                "defaultValue": "ACU"
+                        },
+                        "hardware_rev":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 808464433
+                        },
+                        "serial":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 20001
+                        },
+                        "software_rev":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 539
+                        },
+                        "amazon_number":
+                        {
+                                "type": "string",
+                                "size": 20,
+                                "defaultValue": ""
+                        },
+                        "build_date":
+                        {
+                                "type": "string",
+                                "size": 32,
+                                "defaultValue": "Tue Nov 21 16:30:03 UTC 2023"
+                        }
+		},
+                "C2":
+                {
+                        "type": "unit",
+                        "device_type":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 1
+                        },
+                        "software_rev":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 291
+                        }
+                },
+                "C3":
+                {
+                        "type": "unit",
+                        "device_type":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 1
+                        },
+                        "software_rev":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 296
+                        }
+                },
+                "positioner":
+                {
+                        "type": "unit",
+                        "model":
+                        {
+                                "type": "string",
+                                "size": 12,
+                                "defaultValue": "5.0AE3BP"
+                        },
+                        "geometry":
+                        {
+                                "type": "string",
+                                "size": 12,
+                                "defaultValue": "tilt/azt/elt"
+                        },
+                        "threeAxis":
+                        {
+                                "type": "bool",
+                                "defaultValue": true
+                        },
+                        "customer":
+                        {
+                                "type": "string",
+                                "size": 32,
+                                "defaultValue": "KSat"
+                        },
+                        "base_bolts":
+                        {
+                                "type": "int",
+                                "size": 4,
+                                "defaultValue": 8
+                        },
+                        "bolt_offset":
+                        {
+                                "type": "float",
+                                "defaultValue": 0.0,
+                                "precision": 2
+                        }
+                }
+
+	}
+}
+

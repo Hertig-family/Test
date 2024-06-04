@@ -1,0 +1,34 @@
+{
+	"Week": "5/22/2024",
+	"hours":
+	{
+		"Alice":
+		{
+			"Monday": 8.2,
+			"Tuesday": 8.1,
+			"Wednesday": 8.5,
+			"Thursday": 7.9,
+			"Firday": 8.0 
+		},
+		"Fred":
+		{
+			"Monday": 8.0,
+			"Tuesday": 8.3,
+			"Wednesday": 8.1,
+			"Thursday": 8.8,
+			"Firday": 8.0 
+		},
+		"Sam":
+		{
+			"Monday": 8.2,
+			"Tuesday": 8.6,
+			"Wednesday": 8.0,
+			"Thursday": 8.5,
+			"Saturday": 10.0 
+		},
+		"Tom":
+		{
+			"Monday": 8.0
+		}
+	}
+}
