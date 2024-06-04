@@ -175,12 +175,12 @@ int main( int argc, char **argv )
 		fprintf( stderr, "Obj is an Object of type %d\n", obj.type() );
 	}
 
-	COInteger	ichar( (char) 128 );
+	COInteger	ichar( (int8_t) 128 );
 	fprintf( stderr, "+= 16    char:  0X%.2lX\n", (uint64_t) (ichar += 16) );
 	fprintf( stderr, "/= 4     char:  0x%.2lX\n", (uint64_t) (ichar /= 4 ) );
 	fprintf( stderr, "*= 2     char:  0x%.2lX\n", (uint64_t) (ichar *= 2 ) );
 	fprintf( stderr, "-= 16    char:  0x%.2lX\n", (uint64_t) (ichar -= 16 ) );
-	COInteger	uchar( (unsigned char) 128 );
+	COInteger	uchar( (uint8_t) 128 );
 	fprintf( stderr, "+= 16   uchar:  0X%.2lX\n", (uint64_t) (uchar += 16) );
 	fprintf( stderr, "/= 4    uchar:  0x%.2lX\n", (uint64_t) (uchar /= 4 ) );
 	fprintf( stderr, "*= 2    uchar:  0x%.2lX\n", (uint64_t) (uchar *= 2 ) );
@@ -209,17 +209,16 @@ int main( int argc, char **argv )
 	fprintf( stderr, "-= 16 uint32_t: 0x%lX\n", (uint64_t) (uint -= 16 ) );
 
 	COInteger	i64( (int64_t) 0x8000000000000000 );
-	fprintf( stderr,"value = %ld\n", i64.longValue() );
-	fprintf( stderr, "+= 16  int64_t: %ld\n", (int64_t) (i64 += 16) );
-	fprintf( stderr, "/= 4   int64_t: 0x%lX\n", (int64_t) (i64 /= 4 ) );
-	fprintf( stderr, "*= 2   int64_t: 0x%lX\n", (int64_t) (i64 *= 2 ) );
-	fprintf( stderr, "-= 16  int64_t: 0x%lX\n", (int64_t) (i64 -= 16 ) );
+	fprintf( stderr, "+= 16  int64_t: 0x%lX\n", (int64_t) (i64 += (uint64_t)16) );
+	fprintf( stderr, "/= 4   int64_t: 0x%lX\n", (int64_t) (i64 /= (uint64_t)4 ) );
+	fprintf( stderr, "*= 2   int64_t: 0x%lX\n", (int64_t) (i64 *= (uint64_t)2 ) );
+	fprintf( stderr, "-= 16  int64_t: 0x%lX\n", (int64_t) (i64 -= (uint64_t)16 ) );
 
 	COInteger	u64( (uint64_t) 0x8000000000000000 );
-	fprintf( stderr, "+= 16 uint64_t: 0X%lX\n", (uint64_t)(u64 += 16) );
-	fprintf( stderr, "/= 4  uint64_t: 0x%lX\n", (uint64_t)(u64 /= 4 ) );
-	fprintf( stderr, "*= 2  uint64_t: 0x%lX\n", (uint64_t)(u64 *= 2 ) );
-	fprintf( stderr, "-= 16 uint64_t: 0x%lX\n", (uint64_t)(u64 -= 16 ) );
+	fprintf( stderr, "+= 16 uint64_t: 0x%lX\n", (uint64_t)(u64 += (uint64_t)16) );
+	fprintf( stderr, "/= 4  uint64_t: 0x%lX\n", (uint64_t)(u64 /= (uint64_t)4 ) );
+	fprintf( stderr, "*= 2  uint64_t: 0x%lX\n", (uint64_t)(u64 *= (uint64_t)2 ) );
+	fprintf( stderr, "-= 16 uint64_t: 0x%lX\n", (uint64_t)(u64 -= (uint64_t)16 ) );
 
 //	COMap 	*mp = (COMap *) CppON::parseJsonFile ( "./default.old" );
 //	std::string *s = mp->toCompactJsonString();
