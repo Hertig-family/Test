@@ -203,16 +203,16 @@ int main( int argc, char **argv )
 	fprintf( stderr, "*= 2   int32_t: 0x%lX\n", (uint64_t) (iint *= 2 ) );
 	fprintf( stderr, "-= 16  int32_t: 0x%lX\n", (uint64_t) (iint -= 16 ) );
 	COInteger	uint( (uint32_t) 2147483648 );
-	fprintf( stderr, "+= 16 uint32_t: 0X%lX\n", (uint64_t) (uint += (uint32_t)16) );
+	fprintf( stderr, "+= 16 uint32_t: 0X%lX\n", (uint64_t) (uint += 16) );
 	fprintf( stderr, "/= 4  uint32_t: 0x%lX\n", (uint64_t) (uint /= 4 ) );
 	fprintf( stderr, "*= 2  uint32_t: 0x%lX\n", (uint64_t) (uint *= 2 ) );
 	fprintf( stderr, "-= 16 uint32_t: 0x%lX\n", (uint64_t) (uint -= 16 ) );
 
 	COInteger	i64( (int64_t) 0x8000000000000000 );
-	fprintf( stderr, "+= 16  int64_t: 0x%lX\n", (int64_t) (i64 += (uint64_t)16) );
-	fprintf( stderr, "/= 4   int64_t: 0x%lX\n", (int64_t) (i64 /= (uint64_t)4 ) );
-	fprintf( stderr, "*= 2   int64_t: 0x%lX\n", (int64_t) (i64 *= (uint64_t)2 ) );
-	fprintf( stderr, "-= 16  int64_t: 0x%lX\n", (int64_t) (i64 -= (uint64_t)16 ) );
+	fprintf( stderr, "+= 16  int64_t: 0x%lX\n", (int64_t) (i64 += (iint64_t)16) );
+	fprintf( stderr, "/= 4   int64_t: 0x%lX\n", (int64_t) (i64 /= (iint64_t)4 ) );
+	fprintf( stderr, "*= 2   int64_t: 0x%lX\n", (int64_t) (i64 *= (iint64_t)2 ) );
+	fprintf( stderr, "-= 16  int64_t: 0x%lX\n", (int64_t) (i64 -= (iint64_t)16 ) );
 
 	COInteger	u64( (uint64_t) 0x8000000000000000 );
 	fprintf( stderr, "+= 16 uint64_t: 0x%lX\n", (uint64_t)(u64 += (uint64_t)16) );
